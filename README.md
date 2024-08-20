@@ -1,16 +1,41 @@
-# hilightonboarding_test
+# HILIGHT_ONBOARDING 화면 구현
 
-A new Flutter project.
+플러터(Flutter)에서 하이라이트 온보딩(Highlight Onboarding)은 새로운 사용자나 특정 기능에 익숙하지 않은 사용자들에게 앱의 주요 기능이나 인터페이스 요소를 소개하는 방법이. 일반적으로 하이라이트 온보딩은 앱의 특정 UI 요소나 버튼, 기능 등을 강조하여, 사용자에게 해당 요소의 위치와 역할을 안내하는 방식으로 진행됩니다.
 
-## Getting Started
+## 1. 실행 과정
+<details>
+<summary>1. 패키지 설치</summary>
+<div markdown="1">
 
-This project is a starting point for a Flutter application.
+- 앱을 소개하는 방법은 다양하게 있지만 나는 showcaseview 라는 패키지를 이용해서 hilight_onboarding 화면을 구현하였다.
+- https://pub.dev/packages/showcaseview
 
-A few resources to get you started if this is your first Flutter project:
+</div>
+</details>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<details>
+<summary>코딩하기</summary>
+<div markdown="1">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+Showcase(
+  key: logout,
+  description: 'ex) 로그아웃 하려면 눌러주세요',
+  overlayOpacity: 0.5,
+  targetShapeBorder: const CircleBorder(),
+  targetPadding: const EdgeInsets.all(8),
+  child: const Icon(
+    Icons.exit_to_app,
+    color: Colors.white,
+  ),
+),
+```
+</div>
+</details>
+
+ ## 2. 실행 화면
+<p align ="center">
+ <img src = "https://github.com/user-attachments/assets/74b3792a-f4ed-4e06-828e-1f54a6f7509f">
+</p>
+
+</br>
