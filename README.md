@@ -14,7 +14,7 @@
 </details>
 
 <details>
-<summary>코딩하기</summary>
+<summary>2. 코딩하기</summary>
 <div markdown="1">
 
 ```dart
@@ -35,7 +35,7 @@ Showcase(
 
  ## 2. 실행 화면
 <p align ="center">
- <img src = "https://github.com/user-attachments/assets/74b3792a-f4ed-4e06-828e-1f54a6f7509f">
+ <img src = "https://github.com/user-attachments/assets/ea325e9f-5f4d-4b35-af5f-229f65832e53">
 </p>
 
 </br>
