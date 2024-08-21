@@ -1,22 +1,32 @@
-# HILIGHT_ONBOARDING 화면 구현
+# 🔐 Firebase를 이용한 구글 로그인 구현
 
-플러터(Flutter)에서 하이라이트 온보딩(Highlight Onboarding)은 새로운 사용자나 특정 기능에 익숙하지 않은 사용자들에게 앱의 주요 기능이나 인터페이스 요소를 소개하는 방법이. 일반적으로 하이라이트 온보딩은 앱의 특정 UI 요소나 버튼, 기능 등을 강조하여, 사용자에게 해당 요소의 위치와 역할을 안내하는 방식으로 진행됩니다.
+이 프로젝트는 **Firebase Authentication**을 사용하여 구글 로그인 기능을 구현한 간단한 예제 앱입니다. 이 앱은 사용자가 구글 계정을 통해 로그인할 수 있도록 하고, Flutter에서 Firebase의 기본적인 사용법을 이해하는 데 도움을 줍니다.
 
-## 1. 실행 과정
+## 📋 1. 실행 과정
+
+### 1.1 패키지 설치
 <details>
-<summary>1. 패키지 설치</summary>
+<summary>ShowcaseView 패키지 설치 및 설정</summary>
 <div markdown="1">
 
-- 앱을 소개하는 방법은 다양하게 있지만 나는 showcaseview 라는 패키지를 이용해서 hilight_onboarding 화면을 구현하였다.
-- https://pub.dev/packages/showcaseview
+구글 로그인 기능 외에도, 앱 소개를 위한 **ShowcaseView** 패키지를 사용하여 하이라이트 온보딩 화면을 구현했습니다. 이 패키지는 사용자가 앱의 주요 기능을 쉽게 이해할 수 있도록 도와줍니다.
 
+- **패키지 링크**: [showcaseview](https://pub.dev/packages/showcaseview)
+
+```yaml
+dependencies:
+  showcaseview: ^1.1.0
+```
 </div>
 </details>
-
+1.2 코딩하기
 <details>
-<summary>2. 코딩하기</summary>
+<summary>구현 예시 코드</summary>
 <div markdown="1">
+아래는 ShowcaseView를 사용하여 특정 UI 요소를 강조하는 방법의 예제 코드입니다. 이 코드는 로그아웃 버튼을 사용자가 쉽게 인식할 수 있도록 강조합니다.
 
+dart
+코드 복사
 ```dart
 Showcase(
   key: logout,
@@ -33,9 +43,9 @@ Showcase(
 </div>
 </details>
 
- ## 2. 실행 화면
-<p align ="center">
- <img src = "https://github.com/user-attachments/assets/ea325e9f-5f4d-4b35-af5f-229f65832e53">
-</p>
+## 🎥 2. 실행 화면
+아래는 앱의 실행 화면을 보여주는 GIF입니다. 사용자가 구글 로그인을 통해 어떻게 앱에 접근하는지 확인할 수 있습니다.
 
-</br>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ea325e9f-5f4d-4b35-af5f-229f65832e53" alt="App Demo" width="300">
+</p>
